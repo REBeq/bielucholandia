@@ -3,77 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bielucholandia</title>
+  <title>Serwer Bielucholandia TTT</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="main-container">
-    <h1>Bielucholandia</h1>
-    <p class="welcome-text">Witamy w Bielucholandii!</p>
-    <p class="select-text">Wybierz serwer, na którym się znajdujesz:</p>
+  <input type="radio" name="tabs" id="tab1" checked>
+  <input type="radio" name="tabs" id="tab2">
+  <input type="radio" name="tabs" id="tab3">
+  <input type="radio" name="tabs" id="tab4">
+  
+  <div id="container">
+    <div id="sidebar">
+      <ul>
+        <li><label class="tablink" for="tab1">O serwerze</label></li>
+        <li><label class="tablink" for="tab2">Zasady</label></li>
+        <li><label class="tablink" for="tab3">Kontakt</label></li>
+        <li><label class="tablink" for="tab4">Kolekcje addonów</label></li>
+      </ul>
+    </div>
 
-    <div class="server-buttons">
-      <a class="server-btn" href="https://rebeq.github.io/bielucholandia/ttt.html">Trouble in Terrorist Town</a>
-      <a class="server-btn" href="https://rebeq.github.io/bielucholandia/murder.html">Murder</a>
-      <a class="server-btn" href="https://rebeq.github.io/bielucholandia/scp.html">SCP: Lost Control</a>
-      <a class="server-btn" href="https://rebeq.github.io/bielucholandia/prophunt.html">Prop Hunt</a>
+    <div id="main-content">
+      <div class="tabcontent" id="content1">
+        <h1>[Bielucholandia] Trouble in Terrorist Town</h1>
+        <p>
+          Witamy na serwerze <strong>TTT</strong>, gdzie zaufanie jest kruche, a każdy może być zdrajcą!  
+          Czy potrafisz odkryć, kto jest mordercą, zanim będzie za późno?  
+        </p>
+        <p>
+          W tej grze wcielasz się w jedną z ról i musisz podejmować szybkie decyzje. Każdy ma swoje cele,  
+          ale nie zawsze możesz wierzyć innym graczom.  
+        </p>
+
+        <h2>Role w grze</h2>
+        <ul>
+          <li><strong>Zdrajca</strong> – Musisz eliminować niewinnych i detektywów, ale bez wzbudzania podejrzeń.</li>
+          <li><strong>Detektyw</strong> – Jesteś jedynym, który ma broń od początku. Twoim zadaniem jest zidentyfikowanie zdrajców.</li>
+          <li><strong>Niewinny</strong> – Nie masz żadnych specjalnych zdolności, ale możesz używać swojej dedukcji, aby przeżyć.</li>
+        </ul>
+
+        <h2>Dołącz do innych trybów!</h2>
+        <p>Sprawdź nasze inne serwery i rozpocznij nową przygodę:</p>
+        <div class="server-buttons">
+          <a class="server-btn" href="steam://connect/130.162.241.245:27016">Murder</a>
+          <a class="server-btn" href="steam://connect/130.162.62.183:27016">Prop Hunt</a>
+          <a class="server-btn" href="steam://connect/89.168.82.165:27015">SCP: Lost Control</a>
+        </div>
+      </div>
+
+      <div class="tabcontent" id="content2">
+        <h1>Zasady</h1>
+        <ul>
+          <li>Nie zabijaj bez powodu – musisz mieć dowody lub podejrzenia.</li>
+          <li>Nie ujawniaj swojej roli, jeśli jesteś zdrajcą.</li>
+          <li>Nie nadużywaj mikrofonu i czatu.</li>
+          <li>Nie oszukuj innych graczy poza grą (np. przez Discorda).</li>
+          <li>Detektyw powinien podejmować decyzje oparte na dowodach, a nie losowych oskarżeniach.</li>
+          <li>Nie nadużywaj głosowań do usunięcia graczy.</li>
+          <li>Nie używaj cheatów ani skryptów ułatwiających rozgrywkę.</li>
+        </ul>
+      </div>
+
+      <div class="tabcontent" id="content3">
+        <h1>Kontakt</h1>
+        <p>Potrzebujesz pomocy? Skontaktuj się z administracją przez:</p>
+        <p>
+          <a class="discord-btn" href="https://discord.gg/ezfhj8ttwV" target="_blank">Discord</a>
+        </p>
+        <h2>Administratorzy:</h2>
+        <ul>
+          <li><strong>Bieluszek</strong> <span class="admin-nick">DC - bieluszek__</span></li>
+        </ul>
+      </div>
+
+      <div class="tabcontent" id="content4">
+        <h1>Kolekcje addonów</h1>
+        <p>Kliknij, aby przejść do kolekcji addonów:</p>
+        <div class="addon-collections">
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3416227146" target="_blank" class="collection-btn">TTT</a>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3416227929" target="_blank" class="collection-btn">Murder</a>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3416228515" target="_blank" class="collection-btn">SCP: Lost Control</a>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3416228835" target="_blank" class="collection-btn">Prop Hunt</a>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3414552556" target="_blank" class="collection-btn">Playermodels</a>
+        </div>
+      </div>
     </div>
   </div>
 
   <style>
-    #main-container {
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .welcome-text {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .select-text {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-
-    .server-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .server-btn {
-      background-color: #2980B9;
-      color: #fff;
-      padding: 15px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      border: 2px solid #2980B9;
-      transition: background 0.3s;
-      font-size: 18px;
-      width: 100%;
-      text-align: center;
-      box-sizing: border-box;
-    }
-
-    .server-btn:hover {
-      background-color: #1A5276;
-      border-color: #1A5276;
-    }
-
-    @media (max-width: 600px) {
-      .server-btn {
-        width: 100%;
-      }
+    #tab1:checked ~ #container #main-content #content1,
+    #tab2:checked ~ #container #main-content #content2,
+    #tab3:checked ~ #container #main-content #content3,
+    #tab4:checked ~ #container #main-content #content4 {
+      display: block;
     }
   </style>
 </body>

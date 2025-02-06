@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bielucholandia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>Bielucholandia</h1>
+    <p class="welcome-text">Witamy w Bielucholandii!</p>
+    <p class="select-text">Wybierz serwer, na którym się znajdujesz:</p>
+
+    <div class="server-buttons">
+      <a class="server-btn" href="https://rebeq.github.io/bielucholandia/ttt.html">Trouble in Terrorist Town</a>
+      <a class="server-btn" href="https://rebeq.github.io/bielucholandia/murder.html">Murder</a>
+      <a class="server-btn" href="https://rebeq.github.io/bielucholandia/scp.html">SCP: Lost Control</a>
+      <a class="server-btn" href="https://rebeq.github.io/bielucholandia/prophunt.html">Prop Hunt</a>
+    </div>
+  </div>
+
+  <style>
+    #main-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .welcome-text {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .select-text {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .server-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .server-btn {
+      background-color: #2980B9;
+      color: #fff;
+      padding: 15px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid #2980B9;
+      transition: background 0.3s;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .server-btn:hover {
+      background-color: #1A5276;
+      border-color: #1A5276;
+    }
+
+    @media (max-width: 600px) {
+      .server-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</body>
+</html>
