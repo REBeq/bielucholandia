@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serwer Bielucholandia Murder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="murder-theme">
+  <input type="radio" name="tabs" id="tab1" checked>
+  <input type="radio" name="tabs" id="tab2">
+  <input type="radio" name="tabs" id="tab3">
+  <input type="radio" name="tabs" id="tab4">
+  
+  <div id="container">
+    <div id="sidebar">
+      <ul>
+        <li><label class="tablink" for="tab1">O serwerze</label></li>
+        <li><label class="tablink" for="tab2">Zasady</label></li>
+        <li><label class="tablink" for="tab3">Kontakt</label></li>
+        <li><label class="tablink" for="tab4">Kolekcje addonów</label></li>
+      </ul>
+    </div>
+
+    <div id="main-content">
+      <div class="tabcontent" id="content1">
+        <h1>[Bielucholandia] Murder</h1>
+        <p>
+          Witaj na serwerze <strong>Murder</strong>, gdzie liczy się spryt, dedukcja i umiejętność blefowania!  
+          Czy potrafisz przeżyć i zidentyfikować zagrożenie, zanim będzie za późno?  
+        </p>
+        <p>
+          W tej grze nie ma miejsca na przypadek. Każdy gracz ma swoją rolę, ale nie wszyscy mogą sobie ufać.  
+          Jedynym sposobem na wygraną jest obserwowanie innych, zbieranie dowodów i podejmowanie mądrych decyzji.  
+        </p>
+        
+        <h2>Role w grze</h2>
+        <ul>
+          <li><strong>Morderca</strong> – Twoim zadaniem jest wyeliminowanie wszystkich, zanim odkryją Twoją tożsamość. Masz nóż, ale musisz działać ostrożnie.</li>
+          <li><strong>Detektyw</strong> – Jedyna osoba, która ma broń od początku. Musisz chronić niewinnych i znaleźć Mordercę.</li>
+          <li><strong>Niewinny</strong> – Jesteś celem, ale możesz się bronić! Zbieraj dowody i znajdź sposób, by pokonać Mordercę.</li>
+        </ul>
+
+        <!-- Przeniesione przyciski do innych serwerów na dół strony -->
+        <h2>Dołącz do innych trybów!</h2>
+        <p>Sprawdź nasze inne serwery i rozpocznij nową przygodę:</p>
+        <div class="server-buttons">
+          <a class="server-btn" href="steam://connect/89.168.82.165:27015">SCP: Lost Control</a>
+          <a class="server-btn" href="steam://connect/130.162.62.183:27016">Prop Hunt</a>
+          <a class="server-btn" href="steam://connect/130.162.241.245:27016">TTT</a>
+        </div>
+      </div>
+
+      <div class="tabcontent" id="content2">
+        <h1>Zasady</h1>
+        <ul>
+          <li>Morderca musi działać w ukryciu – nie może atakować otwarcie.</li>
+          <li>Nie wolno zdradzać roli Mordercy na czacie lub przez mikrofon.</li>
+          <li>Detektyw powinien strzelać tylko wtedy, gdy ma pewność, kto jest Mordercą.</li>
+          <li>Niewinni nie mogą celowo przeszkadzać innym w rozgrywce.</li>
+          <li>Ghosting (podpowiadanie innym spoza gry) jest zabroniony.</li>
+          <li>Nie wolno blokować przejść ani uniemożliwiać innym graczom gry.</li>
+          <li>Cheaty i exploity są surowo zabronione.</li>
+        </ul>
+      </div>
+
+      <div class="tabcontent" id="content3">
+        <h1>Kontakt</h1>
+        <p>Potrzebujesz pomocy? Skontaktuj się z administracją przez:</p>
+        <p>
+          <a class="discord-btn" href="https://discord.gg/ezfhj8ttwV" target="_blank">Discord</a>
+        </p>
+        <h2>Administratorzy:</h2>
+        <ul>
+          <li><strong>Bieluszek</strong> <span class="admin-nick">DC - bieluszek__</span></li>
+        </ul>
+      </div>
+
+      <div class="tabcontent" id="content4">
+        <h1>Kolekcje addonów</h1>
+        <p>Kliknij, aby przejść do kolekcji addonów:</p>
+        <div class="addon-collections">
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3416227929" target="_blank" class="collection-btn">Murder</a>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3416227146" target="_blank" class="collection-btn">TTT</a>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3416228515" target="_blank" class="collection-btn">SCP: Lost Control</a>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3416228835" target="_blank" class="collection-btn">Prop Hunt</a>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3414552556" target="_blank" class="collection-btn">Playermodels</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #tab1:checked ~ #container #main-content #content1,
+    #tab2:checked ~ #container #main-content #content2,
+    #tab3:checked ~ #container #main-content #content3,
+    #tab4:checked ~ #container #main-content #content4 {
+      display: block;
+    }
+  </style>
+</body>
+</html>
